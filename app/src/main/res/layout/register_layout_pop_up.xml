@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".v.RegisterFragment"
+    android:gravity="center">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="350dp"
+        android:layout_height="280dp"
+        app:cardElevation="600dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/email_up"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/edit_text_border_style"
+                android:drawableStart="@drawable/email"
+                android:gravity="center"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
+                android:textSize="18sp"
+                tools:ignore="RtlSymmetry" />
+
+
+            <EditText
+                android:id="@+id/password_up"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/email_up"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/edit_text_border_style"
+                android:drawableStart="@drawable/lock"
+                android:gravity="center"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:textSize="18sp"
+                tools:ignore="RtlSymmetry" />
+
+            <Button
+                android:id="@+id/sign_up"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password_up"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/greenAccent"
+                android:text="@string/sign_up"
+                android:theme="@style/Theme.MaterialComponents.Light" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

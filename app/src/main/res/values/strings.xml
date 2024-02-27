@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">AgroMart</string>
+    <string name="email">Email</string>
+    <string name="password">password</string>
+    <string name="log_in">Log In</string>
+    <string name="create_account">Create Account?</string>
+    <string name="with_google">With google</string>
+    <string name="with_phone">With phone</string>
+    <string name="private_">Private</string>
+    <string name="dash_board">dash board</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_up">Sign up</string>
+    <string name="web_client_id">"709274954612-hdra73tqni1nbb9usrifufef98gvsq20.apps.googleusercontent.com"</string>
+    <string name="phone_number">phone number</string>
+    <string name="send">send</string>
+    <string name="resending_in_60_s">resending in 60 s</string>
+    <string name="verification_code">enter verification code</string>
+    <string name="admin">admin</string>
+    <string name="admin_code">admin code</string>
+    <string name="price">Price</string>
+    <string name="product_name">product name</string>
+    <string name="quantity">quantity</string>
+    <string name="add">add</string>
+    <string name="dash_boar">Dash Board</string>
+    <string name="loading">loading…</string>
+    <string name="remember">remember image is required to add</string>
+    <string name="buy">buy</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="new_price">new price</string>
+    <string name="new_quantity">new quantity</string>
+    <string name="update">update</string>
+    <string name="update2">UPDATE</string>
+    <string name="delete2">DELETE</string>
+</resources>

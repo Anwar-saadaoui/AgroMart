@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PhoneFragment"
+    android:gravity="center">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="360dp"
+        android:layout_height="280dp"
+        app:cardElevation="30dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="40dp"
+                android:hint="@string/phone_number"
+                android:drawableStart="@drawable/phone"
+                android:drawablePadding="20dp"
+                />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/phone_number"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:id="@+id/time_resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resending_in_60_s"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                />
+
+
+            <EditText
+                android:id="@+id/otp_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="30dp"
+                android:hint="@string/verification_code"
+                android:drawableStart="@drawable/phone"
+                android:drawablePadding="20dp"
+                android:visibility="invisible"
+                />
+
+            <Button
+                android:id="@+id/login_withPhone"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progress_bar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/log_in"
+                android:textSize="20sp"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/blueAccent"
+                />
+
+            <Button
+                android:id="@+id/send_otp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="52dp"
+                android:backgroundTint="@color/blueAccent"
+                android:text="@string/send"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</LinearLayout>
