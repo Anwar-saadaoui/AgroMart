@@ -30,7 +30,7 @@ class HomeActivity : AppCompatActivity() {
         listProduct = mutableListOf<Product>()
 
         val adapter = RecyclerAdapter(listProduct, object:RecyclerAdapter.addOnItemClickedListener{
-            override fun ItemClicked(view: View) {
+            override fun ItemClicked(product: Product) {
                 TODO("Not yet implemented")
             }
         })
